@@ -9,11 +9,11 @@ const Header = () => {
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-6'>
-              <p className='text-white mb-0'>Free Shipping Over ₹500 & Free Returns</p>
+              <p className='text-light gray mb-0'>Free Shipping Over ₹500 & Free Returns</p>
             </div>
             <div className='col-6'>
               <p className='text-end text-white mb-0' >
-                HelpLine: <a className="text-white" href='tel:+91 9834499411'> +91 9834499411</a>
+                HelpLine: <a className="text-light gray" href='tel:+91 9834499411'> +91 9834499411</a>
               </p>
             </div>
           </div>
@@ -25,7 +25,7 @@ const Header = () => {
           <div className='row align-items-center'>
             <div className='col-2'>
               <h2>
-                <Link className='text-white'>E-Cart</Link>
+                <Link className='text-white'>DevCorner.</Link>
               </h2>
             </div>
             <div className='col-5'>
@@ -63,7 +63,7 @@ const Header = () => {
                 <Link className='d-flex align-items-center gap-10 text-white'>
                 <img src='images/cart.svg' alt='cart' />
                 <div className='d-flex flex-column'>
-                  <span className='badge bg-white text-dark'>0</span>
+                  <span className='badge bg-white text-dark'>2</span>
                   <p className='mb-0'>₹ 500</p> 
                 </div>                  
               </Link>
@@ -81,13 +81,16 @@ const Header = () => {
               <div className='menu-bottom d-flex align-items-center gap-30'>
                 <div>
                 <div className="dropdown">
-  <button className="btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Shop Categories
+  <button 
+  className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src='images/menu.svg' alt='menu' />
+    <span className='me-5 d-inline-block'>Shop Categories</span>
+    
   </button>
   <ul class="dropdown-menu">
-    <li><a className="dropdown-item" href="#">Action</a></li>
-    <li><a className="dropdown-item" href="#">Another action</a></li>
-    <li><a className="dropdown-item" href="#">Something else here</a></li>
+    <li><Link className="dropdown-item text-white" to="">Action</Link></li>
+    <li><Link className="dropdown-item text-white" to="">Another action</Link></li>
+    <li><Link className="dropdown-item text-white" to="">Something else here</Link></li>
   </ul>
 </div>
                 </div>
