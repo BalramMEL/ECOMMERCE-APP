@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -92,7 +94,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -138,7 +139,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="home-wrapper-2 pb-5 pt-1">
         <div className="container-xxl">
           <div className="row">
@@ -205,8 +205,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="marque-wrapper py-5">
+      <section className="marque-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -242,6 +241,33 @@ const Home = () => {
                 </Marquee>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Featured Colection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="blog-wrapper py-5 home-wrapper">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blog</h3>
+            </div>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
           </div>
         </div>
       </section>
