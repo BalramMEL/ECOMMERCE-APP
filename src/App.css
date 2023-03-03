@@ -283,6 +283,23 @@ footer .input-group-text {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+.product-card .product-image{
+  height: 270px;
+}
+.product-card .product-image img{
+  object-fit: contain;
+}
+
+.product-card .product-image > img:last-child{
+  display: none;
+}
+.product-card:hover .product-image > img:nth-child(1){
+  display: none;
+}
+.product-card:hover .product-image > img:last-child{
+  display: block;
+}
+
 .product-card:hover .action-bar {
   right: 13px;
 }
@@ -315,5 +332,19 @@ footer .input-group-text {
 }
 
 /* Product Card */
+
+/* SpecialProduct */
+.special-product-card{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+strike{
+  color: red;
+}
+
+/* SpecialProduct Ends*/
+
+
 
 /* Home Page Ends*/
