@@ -9,7 +9,7 @@ const ProductCard = () => {
 
   return (
     <div className="col-3">
-      <div className="product-card position-relative">
+      <Link className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link>
             <img src="images/wish.svg" alt="wishlist" />
@@ -17,8 +17,10 @@ const ProductCard = () => {
         </div>
 
         <div className="product-image ">
-          <img src="images/watch.jpg" alt="watch" />
+          <img src="images/watch.jpg" className="img-fluid" alt="watch" />
+          <img src="images/watch1.jpg" className="img-fluid" alt="watch" />
         </div>
+
         <div className="product-details">
           <h6 className="brand">Bajaj</h6>
           <h5 className="product-title">
@@ -28,7 +30,7 @@ const ProductCard = () => {
             count={5}
             onChange={ratingChanged}
             size={24}
-            value="3.5"
+            value={3.5}
             edit={false}
             isHalf={true}
             emptyIcon={<i className="far fa-star"></i>}
@@ -52,7 +54,7 @@ const ProductCard = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
