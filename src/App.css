@@ -271,7 +271,25 @@ footer .input-group-text {
   color: var(--color-777777);
   padding: 0;
 }
-
+.single-blog-card a{
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+.single-blog-card h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+.single-blog-card p{
+  color: var(--color-777777);
+  font-size: 18px;
+}
+.single-blog-card img{
+  width: 80%;
+ 
+  border-radius: 10px; 
+}
 /* Blog Card Ends*/
 
 /* Product Card */
@@ -556,6 +574,9 @@ strike{
   color: var(--color-777777);
   font-size: 14px; 
 }
+.auth-card .form-control::placeholder{
+   color: var(--color-777777);
+}
 .auth-card a{
   font-size: 14px;
   font-weight: 400;
@@ -570,6 +591,48 @@ strike{
   background-color: var(--color-131921);
 }
 /* Login-Card Ends*/
+
+/* Reset passWord */
+.auth-card span{
+  font-size: 14px; 
+  color: var(--color-777777);
+}
+.auth-card .cancel{
+  font-size: 15px;
+  font-weight: 400;
+}
+.auth-card .cancel:hover{
+  color: var(--color-131921);
+}
+.forgot-wrapper .auth-card{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+/* Reset passWord ends */
+
+/* Sign-Up */
+.signUp-wrapper .auth-card{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* Sign-Up Ends */
+
+/* Privacy Policy */
+.policy-wrapper .privacy{
+   background-color: white;
+   padding: 10px 28px;
+   border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.policy-wrapper .privacy .title{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.policy-wrapper .privacy .desc{
+  font-size: 17px;
+  color: var(--color-3b4149);
+}
+/* Privacy Policy Ends*/
 
 
 /* Home Page Ends*/
